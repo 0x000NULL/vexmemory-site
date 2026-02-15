@@ -50,7 +50,7 @@ export default function AnimatedBackground() {
           const dy = nodes[i].y - nodes[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < connectionDistance) {
-            const opacity = (1 - dist / connectionDistance) * 0.15;
+            const opacity = (1 - dist / connectionDistance) * 0.35;
             ctx.beginPath();
             ctx.strokeStyle = `rgba(123, 47, 190, ${opacity})`;
             ctx.lineWidth = 1;
@@ -65,7 +65,7 @@ export default function AnimatedBackground() {
       for (const node of nodes) {
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(123, 47, 190, 0.4)";
+        ctx.fillStyle = "rgba(123, 47, 190, 0.7)";
         ctx.fill();
 
         // Update position
@@ -91,7 +91,7 @@ export default function AnimatedBackground() {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 w-full h-full pointer-events-none"
-      style={{ opacity: 0.6 }}
+      style={{ opacity: 0.9 }}
     />
   );
 }
