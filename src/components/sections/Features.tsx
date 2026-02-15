@@ -8,38 +8,58 @@ const features = [
   },
   {
     icon: "🔍",
-    title: "Semantic Vector Search",
-    description: "pgvector embeddings (384-dim) enable similarity search across your entire memory store. Find relevant context even when exact words don't match.",
+    title: "Hybrid Semantic Search",
+    description: "pgvector embeddings + keyword matching for best-of-both-worlds retrieval. Optional Qdrant integration for dedicated vector search at scale.",
   },
   {
     icon: "⏳",
-    title: "Temporal Memory Decay",
-    description: "Ebbinghaus-inspired forgetting curves with 30-day half-life. Frequently accessed memories resist decay. Importance adjusts automatically.",
+    title: "Importance Decay",
+    description: "Ebbinghaus-inspired forgetting curves with 30-day half-life. Frequently accessed memories resist decay. Unused ones fade naturally.",
   },
   {
     icon: "🤖",
-    title: "Auto Entity Extraction",
+    title: "Auto-Extraction",
     description: "NLP pipeline (spaCy NER + pattern matching) extracts decisions, events, facts, and learnings from raw text — no LLM call needed.",
   },
   {
     icon: "😴",
-    title: "Sleep-Cycle Consolidation",
-    description: "Clusters semantically similar memories, creates summaries, and lowers importance of originals. Like your brain during sleep.",
+    title: "Sleep Consolidation",
+    description: "Clusters semantically similar memories, creates summaries, and lowers importance of originals. Like your brain during sleep. Cron-schedulable.",
+  },
+  {
+    icon: "💭",
+    title: "Emotion Tagging",
+    description: "Keyword-based sentiment analysis tags memories with dominant emotions — joy, pride, frustration, excitement, concern, relief, curiosity, satisfaction.",
+  },
+  {
+    icon: "🧠",
+    title: "Smart Startup Recall",
+    description: "Session-start endpoint pulls relevant context from graph + vector search based on the user's first message. Agents wake up with full context.",
+  },
+  {
+    icon: "💾",
+    title: "Pre-Compaction Dump",
+    description: "Flush important context to the graph DB before LLM context window compaction. Prevents memory loss during long sessions.",
   },
   {
     icon: "⚡",
-    title: "REST API (FastAPI)",
-    description: "Full CRUD, semantic query, context endpoints for agent integration, graph traversal, timeline queries, and feedback loops — all over HTTP.",
+    title: "Contradiction Detection",
+    description: "Automatically identifies conflicting memories and creates CONTRADICTS graph edges, helping agents resolve inconsistencies.",
   },
   {
     icon: "🐳",
     title: "Docker One-Command Deploy",
-    description: "git clone, docker compose up, done. PostgreSQL, AGE, pgvector, and the API all configured. Production-ready in 60 seconds.",
+    description: "git clone, docker compose up, done. PostgreSQL, AGE, pgvector, and the API all configured. Optional Qdrant with --profile qdrant.",
   },
   {
     icon: "📊",
     title: "Built-in Dashboard",
     description: "Real-time web UI showing memory stats, types, emotions, entity graphs, and recent activity. No extra setup needed.",
+  },
+  {
+    icon: "📈",
+    title: "Feedback & Learning",
+    description: "Track which memories are used, ignored, or corrected. Importance scores adjust based on observed usefulness over time.",
   },
 ];
 

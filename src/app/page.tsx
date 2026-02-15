@@ -6,6 +6,7 @@ import QuickStart from "@/components/sections/QuickStart";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Stats from "@/components/sections/Stats";
 import OpenSource from "@/components/sections/OpenSource";
+import WhatsNew from "@/components/sections/WhatsNew";
 import Footer from "@/components/sections/Footer";
 import Navbar from "@/components/Navbar";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks />
       <QuickStart />
       <Stats />
+      <WhatsNew />
       <OpenSource />
       <Footer />
     </main>

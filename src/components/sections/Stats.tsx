@@ -33,7 +33,7 @@ export default function Stats() {
               Built for Performance
             </h2>
             <p className="text-dark-200 text-lg max-w-2xl mx-auto">
-              Real numbers from a real system. Currently running with 191 memories and 1,250+ indexed entities.
+              Real numbers from a real system. Currently running with 500+ memories and 1,500+ indexed entities.
             </p>
           </div>
         </ScrollReveal>
