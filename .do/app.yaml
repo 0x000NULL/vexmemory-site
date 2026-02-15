@@ -1,0 +1,10 @@
+name: vexmemory-site
+static_sites:
+- name: web
+  github:
+    repo: 0x000NULL/vexmemory-site
+    branch: main
+    deploy_on_push: true
+  build_command: npm run build
+  output_dir: out
+  environment_slug: node-js
