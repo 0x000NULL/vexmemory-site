@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Architecture from "@/components/sections/Architecture";
 import Features from "@/components/sections/Features";
+import Performance from "@/components/sections/Performance";
 import QuickStart from "@/components/sections/QuickStart";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Stats from "@/components/sections/Stats";
@@ -16,8 +17,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Problem />
-      <Architecture />
       <Features />
+      <Performance />
+      <Architecture />
       <HowItWorks />
       <QuickStart />
       <Stats />
